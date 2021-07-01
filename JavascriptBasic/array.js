@@ -1,7 +1,12 @@
 /* [Javascript Array Methods] */
+// 크기가 10 인 배열 생성
+let A = Array(10);
+console.log(A, A[0]);   // [ <10 empty items> ] undefined
+// 그래서 항상 빈 배열을 생성하려면 아래처럼 의미있는 값으로 채워야 한다.
+console.log(Array(10).fill(0))
 
 //[1] A.concat(B) : return A+B
-let A = [1,2,3];
+A = [1,2,3];
 console.log(A.concat(4,5)); // [1,2,3,4,5]
 console.log(A.concat([4,5])); // [1,2,3,4,5]
 console.log(A.concat(4,[5])); // [1,2,3,4,5]
